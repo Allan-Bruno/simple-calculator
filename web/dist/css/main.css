@@ -1,0 +1,32 @@
+.container {
+  display: flexbox;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  flex-direction: column;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.5fr;
+  grid-template-rows: 5fr 5fr 5fr 5fr 2fr;
+}
+
+.button {
+  margin: 0.15rem;
+  padding: 0.5rem;
+}
+
+.display {
+  position: absolute;
+  transform: translateY(-10rem);
+}
+
+#reset {
+  grid-column: 1/3;
+}
+
+#equal {
+  grid-column: 3/-1;
+}
