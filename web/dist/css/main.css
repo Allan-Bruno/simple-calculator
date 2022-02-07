@@ -1,26 +1,32 @@
 .container {
-  display: flexbox;
-  position: fixed;
+  display: flex;
+  position: absolute;
   justify-content: center;
   align-items: center;
-  width: 70vw;
+  width: 100%;
+  height: 100%;
   flex-direction: column;
+  overflow-y: hidden;
 }
 
 .buttons {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1.5fr;
-  grid-template-rows: 5fr 5fr 5fr 5fr 2fr;
+  grid-template-columns: 10fr 10fr 10fr 10fr;
+  grid-template-rows: 10fr 10fr 10fr 10fr 5fr;
+}
+
+.display {
+  background-color: gray;
+  padding: 2rem;
+  width: 81.55%;
+  align-content: center;
+  display: absolute;
+  margin-top: 12px;
 }
 
 .button {
   margin: 0.15rem;
-  padding: 0.5rem;
-}
-
-.display {
-  position: absolute;
-  transform: translateY(-10rem);
+  padding: 1rem;
 }
 
 #reset {
