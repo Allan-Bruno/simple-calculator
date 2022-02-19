@@ -4,24 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Calculator</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="icon" href="./assets/icon.ico" type="image/x-icon" sizes="any" />
-    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./assets/icon.ico" type="image/x-icon" sizes="any" />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <meta name="description" content="A simple calculator app." />
+    <title>Simple Calculator</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/responsivity.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <div class="container">
-      <div id="spaceOne"></div>
+    <main class="container">
       <div id="display">0</div>
-      <div id="separator"></div>
       <div class="buttons" id="btn">
         <button class="button">7</button>
         <button class="button">8</button>
@@ -44,8 +41,8 @@
 
         <button class="button" id="equal">=</button>
       </div>
-    </div>
-    <script src="./lib/script.js"></script>
-    <script src="./lib/reset.js"></script>
+    </main>
+
+    <script src="./lib/main.js" type="module"></script>
   </body>
 </html>
