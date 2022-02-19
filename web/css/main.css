@@ -7,11 +7,6 @@
   src: url(/web/assets/digital7.ttf);
 }
 
-@font-face {
-  font-family: roundedCorners;
-  src: url(/web/dist/assets/22203___.TTF);
-}
-
 #equal {
   font-size: 30px;
   background-color: rgb(3, 180, 180);
