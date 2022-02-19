@@ -36,4 +36,4 @@ OBS: None of these codes must be put in practice on a real project, they're not 
 
 <h1 align="center">⬇️ Licence ⬇️</h1>
 
-<p align="center">This project is under license. Click [here](/LICENSE) for details.</p>
+This project is under license. Click [here](/LICENSE) for details.
