@@ -1,11 +1,11 @@
 <h1 align="center">Simple Calculator</h1>
 
-<img src="../images\mobile-view.png"/>
+<img src="images\mobile-view.png"/>
 
-<small>Mobile Preview
+Mobile Preview
 
-<img src="../images\desktop-view.png" width="100%" height="100%"/>
-<small>Desktop Preview</small>
+<img src="images\desktop-view.png"/>
+Desktop Preview
 <br>
 <br>
 <br>
