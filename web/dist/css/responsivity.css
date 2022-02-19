@@ -1,0 +1,14 @@
+@media (min-width: 1000px) {
+  .buttons {
+    max-width: 500px;
+  }
+
+  #display {
+    max-width: 500px;
+    padding-top: 1rem;
+  }
+
+  #operators {
+    max-width: 500px;
+  }
+}

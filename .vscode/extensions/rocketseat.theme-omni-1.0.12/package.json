@@ -1,0 +1,67 @@
+{
+	"name": "theme-omni",
+	"version": "1.0.12",
+	"displayName": "Omni Theme",
+	"homepage": "https://github.com/getomni/omni",
+	"description": "Dark theme created by Rocketseat 🚀",
+	"publisher": "rocketseat",
+	"license": "MIT",
+	"scripts": {
+		"build": "node ./scripts/build.js",
+		"lint": "node ./scripts/lint.js",
+		"package": "vsce package -o ./bin/omni.vsix",
+		"vscode:prepublish": "npm run build",
+		"vsce-publish": "vsce publish"
+	},
+	"maintainers": [
+		"Diego Fernandes <diego.schell.fgmail.com>",
+		"Luke Morales <lukemorales@live.com>",
+		"João Pedro Schmitz <hey@joaopedro.dev>"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/getomni/visual-studio-code.git"
+	},
+	"bugs": {
+		"url": "https://github.com/getomni/visual-studio-code/issues"
+	},
+	"engines": {
+		"vscode": "^1.13.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"omni",
+		"rocketseat",
+		"theme",
+		"color-theme"
+	],
+	"icon": "icon.png",
+	"galleryBanner": {
+		"color": "#17181A",
+		"theme": "dark"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Omni",
+				"uiTheme": "vs-dark",
+				"path": "./theme/omni.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"js-yaml": "^3.13.1",
+		"prettier": "^1.19.1",
+		"tinycolor2": "^1.4.1",
+		"vsce": "^1.75.0"
+	},
+	"__metadata": {
+		"id": "434bbf64-cfdd-4ff4-84e0-b0b9a640060a",
+		"publisherId": "b0d03dc3-1ed9-44ec-8714-26521a607fb3",
+		"publisherDisplayName": "Rocketseat",
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1640582964914
+	}
+}

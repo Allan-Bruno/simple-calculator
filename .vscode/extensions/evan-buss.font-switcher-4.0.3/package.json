@@ -1,0 +1,93 @@
+{
+	"name": "font-switcher",
+	"displayName": "Font Switcher",
+	"description": "Quickly configure your font settings.",
+	"version": "4.0.3",
+	"publisher": "evan-buss",
+	"engines": {
+		"vscode": "^1.22.0"
+	},
+	"author": {
+		"name": "Evan Buss",
+		"email": "evan.buss28@gmail.com",
+		"url": "https://github.com/evan-buss"
+	},
+	"license": "MIT",
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"fonts",
+		"customization",
+		"vscode"
+	],
+	"extensionKind": [
+		"ui"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/evan-buss/font-switcher"
+	},
+	"icon": "icon.png",
+	"activationEvents": [
+		"onCommand:font-switcher.switchFont",
+		"onCommand:font-switcher.setFontSize",
+		"onCommand:font-switcher.switchTerminalFont",
+		"onCommand:font-switcher.setTerminalFontSize"
+	],
+	"main": "./dist/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "font-switcher.switchFont",
+				"title": "Switch Font"
+			},
+			{
+				"command": "font-switcher.setFontSize",
+				"title": "Font Size"
+			},
+			{
+				"command": "font-switcher.switchTerminalFont",
+				"title": "Switch Terminal Font"
+			},
+			{
+				"command": "font-switcher.setTerminalFontSize",
+				"title": "Terminal Font Size"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run package",
+		"compile": "webpack",
+		"watch": "webpack --watch",
+		"package": "webpack --mode production --devtool hidden-source-map",
+		"test-compile": "tsc -p ./",
+		"test-watch": "tsc -watch -p ./",
+		"pretest": "npm run test-compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.4",
+		"@types/mocha": "^9.0.0",
+		"@types/node": "^16.7.9",
+		"@types/vscode": "^1.22.0",
+		"@typescript-eslint/eslint-plugin": "^4.30.0",
+		"@typescript-eslint/parser": "^4.30.0",
+		"eslint": "^7.32.0",
+		"glob": "^7.1.7",
+		"mocha": "^9.1.1",
+		"ts-loader": "^9.2.5",
+		"typescript": "^4.4.2",
+		"vscode-test": "^1.6.1",
+		"webpack": "^5.51.1",
+		"webpack-cli": "^4.8.0"
+	},
+	"__metadata": {
+		"id": "d675f82f-f7bd-40a7-a99a-2fa418b8803b",
+		"publisherId": "f8ad9227-217c-4d37-8d0b-e329d388044d",
+		"publisherDisplayName": "Evan Buss",
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1643508086972
+	}
+}
