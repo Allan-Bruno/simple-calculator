@@ -33,7 +33,7 @@ button:hover {
 .container {
   margin: 5vh auto 0;
   width: 90vw;
-  height: 9vh;
+  height: 90vh;
   max-width: 375px;
   display: flex;
   flex-direction: column;
