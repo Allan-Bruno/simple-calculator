@@ -1,6 +1,6 @@
 <h1 align="center">Simple Calculator</h1>
 
-<img src="images\mobile-view.png"/>
+<img src="images/mobile-view.jpeg"/>
 
 Mobile Preview
 
